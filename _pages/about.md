@@ -22,6 +22,6 @@ I also lead a group of enthusiastic undergraduates dedicated to implementing adv
 
 Plus, I initiated an **[academic discussion community](../assets/Community_Wechat.png)** at UCAS for students sharing common interests in integrating machine learning into science. Currently, the community covers members from UCAS, Peking University, Tsinghua University, UIUC, etc.
 
-You can find my CV here: [Xinzhe Dai's Curriculum Vitae](../images/personal_website_picture.jpg).
+You can find my CV here: [Xinzhe Dai's Curriculum Vitae](../assets/CV.pdf).
 
 [Email](mailto:daixinzhe19@mails.ucas.ac.cn) / [Github](https://github.com/dxz222)

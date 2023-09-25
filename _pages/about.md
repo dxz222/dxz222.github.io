@@ -18,9 +18,9 @@ During my junior year, I attended MIT as an exchange student where I had the pri
 
 I am now working as a visiting student in [Prof. Ceder's group](https://ceder.berkeley.edu/) on material simulation and discovery.
 
-I also lead a group of enthusiastic undergraduates dedicated to implementing advanced machine learning tools in the analysis of electron microscopic (EM) data. Our ultimate goal is to build a **high-throughput** and **automatic** digital analysis [EM platform](../assets/DeepSTEM.png), **eliminating possible barriers to SOTA methods for microscopists**.
+I also lead a group of enthusiastic undergraduates dedicated to implementing advanced machine learning tools in the analysis of electron microscopic (EM) data. Our ultimate goal is to build a high-throughput and automatic digital analysis [EM platform](../assets/DeepSTEM.png), eliminating possible barriers to SOTA methods for microscopists.
 
-Plus, I initiated an **[academic discussion community](../assets/Community_Wechat.png)** at UCAS for students sharing common interests in integrating machine learning into science. Currently, the community members cover students from UCAS, Peking University, Tsinghua University, UIUC, NYU, etc.
+Plus, I initiated an [academic discussion community](../assets/Community_Wechat.png) at UCAS for students sharing common interests in integrating machine learning into science. Currently, the community members cover students from UCAS, Peking University, Tsinghua University, UIUC, NYU, etc.
 
 You can find my CV here: [Xinzhe Dai's Curriculum Vitae](../assets/CV.pdf).
 

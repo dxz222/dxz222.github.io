@@ -11,5 +11,4 @@ citation: 'Low-dose imaging denoise with one pair of noise images. Optics Expres
 This paper is about an unsupervised denoising method used for low-dose imaging.
 
 [Download paper here](https://www.researchgate.net/publication/370049095_Low-dose_imaging_denoising_with_one_pair_of_noisy_images)
-
-Recommended citation: Low-dose imaging denoise with one pair of noise images. Optics Express (2023) Yang, D., Lv, W., Zhang, J., Chen, H., Sun, X., Lv, S., Dai, X., Luo, R., Zhou, W., Shi, Y., Qiu, J.
+<div align=center><img src="../images/low_dose_denoising.png" width="300"/></div>

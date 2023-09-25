@@ -1,7 +1,7 @@
 ---
-title: 'Blog Post number 1'
+title: 'B'
 date: 2012-08-14
-permalink: /posts/2012/08/blog-post-1/
+permalink: /posts/2021/08/bubble_cosmos/
 tags:
   - cool posts
   - category1
@@ -18,3 +18,6 @@ You can have many headings
 
 Aren't headings cool?
 ------
+<object width="340" height="86" data="http://music.163.com/style/swf/widget.swf?
+sid=445154960&type=2&auto=0&width=320&height=66" 
+type="application/x-shockwave-flash"></object> 

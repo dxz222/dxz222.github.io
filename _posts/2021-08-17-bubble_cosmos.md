@@ -1,6 +1,6 @@
 ---
-title: 'B'
-date: 2012-08-14
+title: 'Bubble Cosmos'
+date: 2021-08-17
 permalink: /posts/2021/08/bubble_cosmos/
 tags:
   - cool posts

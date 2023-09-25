@@ -20,8 +20,8 @@ I am now working as a visiting student in [Prof. Ceder's group](https://ceder.be
 
 I also lead a group of enthusiastic undergraduates dedicated to implementing advanced machine learning tools in the analysis of electron microscopic (EM) data. Our ultimate goal is to build a **high-throughput** and **automatic** digital analysis [EM platform](../assets/DeepSTEM.png), **eliminating possible barriers to SOTA methods for microscopists**.
 
-Plus, I initiated an **[academic discussion community](../assets/Community_Wechat.png)** at UCAS for students sharing common interests in integrating machine learning into science. Currently, the community covers members from UCAS, Peking University, Tsinghua University, UIUC, etc.
+Plus, I initiated an **[academic discussion community](../assets/Community_Wechat.png)** at UCAS for students sharing common interests in integrating machine learning into science. Currently, the community members cover students from UCAS, Peking University, Tsinghua University, UIUC, NYU, etc.
 
 You can find my CV here: [Xinzhe Dai's Curriculum Vitae](../assets/CV.pdf).
 
-[Email](mailto:daixinzhe19@mails.ucas.ac.cn) / [Github](https://github.com/dxz222)
+[Email](mailto:daixinzhe19@mails.ucas.ac.cn) | [Github](https://github.com/dxz222)

@@ -1,7 +1,7 @@
 ---
 title: "Low-dose imaging denoise with one pair of noise image"
 collection: publications
-permalink: /publication/2023-04-14-Low-dose imaging denoise with one pair of noise image
+permalink: /publication/2023-04-14-Low-dose_imaging_denoise_with_one_pair_of_noise_image
 excerpt: 'This paper is about an unsupervised denoising method used for low-dose imaging.'
 date: 2023-04-14
 venue: 'Optics Express'

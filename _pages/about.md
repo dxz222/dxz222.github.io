@@ -8,8 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a fifth-year undergraduate at [School of Physical Sciences](https://physics.ucas.ac.cn/index.php/en/), University of Chinese Academy of Sciences ([UCAS](https://english.ucas.ac.cn/)), fortunately working with [Prof. Wu Zhou](http://zhouwu.ucas.ac.cn/index/group/detail?id=8.html) from [STEM Group@UCAS](http://zhouwu.ucas.ac.cn/). To pursue my goal, I am now working as a visiting student in [Prof. Ceder's group](https://ceder.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/).
-Aligned with my goal of integrating scientific research with machine learning (ML), my interests lie in the fields (including but not limited to): 
+I'm a fifth-year undergraduate at [School of Physical Sciences](https://physics.ucas.ac.cn/index.php/en/), University of Chinese Academy of Sciences ([UCAS](https://english.ucas.ac.cn/)), fortunately working with [Prof. Wu Zhou](http://zhouwu.ucas.ac.cn/index/group/detail?id=8.html) from [STEM Group@UCAS](http://zhouwu.ucas.ac.cn/). To pursue my goal, I am now working as a visiting student in [Prof. Ceder's group](https://ceder.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/). Aligned with my goal of integrating scientific research with machine learning (ML), my interests lie in the fields (including but not limited to): 
 
 (1) **ML-driven computational condensed matter physics:** accelerate simulation and post-processing with machine learning tools, like ML interatomic potential and material discovery with generative model.\\
 (2) **ML-driven data analysis in electron microscopy:** develop machine learning techniques to improve spectral and imaging quality, track material defects, and enhance chemical characterization ability.\\

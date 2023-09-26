@@ -6,7 +6,7 @@ excerpt: 'An open-source AI copilot for STEM Z-Contrast imaging and STEM-EELS da
 date: 2023-10-28
 venue: 'Poster, 2023 National Annual Conference on Electron Microscopy'
 paperurl: 'https://github.com/dxz222/DeepSTEM'
-citation: ''
+citation: 'TBD'
 ---
 DeepSTEM is an open-source AI copilot for STEM Z-Contrast imaging and STEM-EELS data processing and analysis.
 

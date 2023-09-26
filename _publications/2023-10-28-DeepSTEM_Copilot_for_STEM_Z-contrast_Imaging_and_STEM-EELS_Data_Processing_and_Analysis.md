@@ -12,4 +12,4 @@ This paper is about the number 2. The number 3 is left for future work.
 
 [See details here](https://github.com/dxz222/DeepSTEM)
 
-Recommended citation: 
+<div align=center><img src="../images/STEM.png" width="600"/></div>

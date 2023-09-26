@@ -1,15 +1,15 @@
 ---
-title: "Paper Title Number 2"
+title: "DeepSTEM: Copilot for STEM Z-contrast Imaging and STEM-EELS Data Processing and Analysis"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/2023-10-28-DeepSTEM_Copilot_for_STEM_Z-contrast_Imaging_and_STEM-EELS_Data_Processing_and_Analysis
 excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper2.pdf'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+date: 2023-10-28
+venue: 'Poster, 2023 National Annual Conference on Electron Microscopy'
+paperurl: 'https://github.com/dxz222/DeepSTEM'
+citation: ''
 ---
 This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+[See details here](https://github.com/dxz222/DeepSTEM)
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+Recommended citation: 

@@ -8,8 +8,12 @@ venue: 'Poster, 2023 National Annual Conference on Electron Microscopy'
 paperurl: 'https://github.com/dxz222/DeepSTEM'
 citation: ''
 ---
-This paper is about the number 2. The number 3 is left for future work.
+DeepSTEM is an open-source AI copilot for STEM Z-Contrast imaging and STEM-EELS data processing and analysis.
 
-[See details here](https://github.com/dxz222/DeepSTEM)
+•	High-precision chemical characterization with scanning transmission electron microscopy
+•	Structural analysis and physical properties of amorphous monolayer carbon: r-VAE method
+•	Isotope discrimination with atomic resolution: EELS denoising with machine learning
+
+[See more details here](https://github.com/dxz222/DeepSTEM)
 
 <div align=center><img src="../images/STEM.png" width="600"/></div>

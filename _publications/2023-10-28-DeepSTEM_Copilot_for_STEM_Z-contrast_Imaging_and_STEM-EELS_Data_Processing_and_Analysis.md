@@ -21,13 +21,13 @@ STEM Overview
 <div align=center><img src="../images/STEM.png" width="900"/></div>
 
 Denoising Performance
-===
+---
 <div align=center><img src="../images/Denoise.png" width="450"/></div>
 
 Localization Performance
-===
+---
 <div align=center><img src="../images/Localization.png" width="450"/></div>
 
 Rediscovery of Ring Types in Amorphous Carbon
-===
+---
 <div align=center><img src="../images/RVAE" width="450"/></div>

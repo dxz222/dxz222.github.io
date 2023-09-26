@@ -30,4 +30,4 @@ Localization Performance
 
 Rediscovery of Ring Types in Amorphous Carbon
 ---
-<div align=center><img src="../images/RVAE" width="450"/></div>
+<div align=center><img src="../images/RVAE.png" width="450"/></div>

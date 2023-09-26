@@ -16,4 +16,4 @@ DeepSTEM is an open-source AI copilot for STEM Z-Contrast imaging and STEM-EELS 
 
 [See more details here](https://github.com/dxz222/DeepSTEM)
 
-<div align=center><img src="../images/STEM.png" width="600"/></div>
+<div align=center><img src="../images/STEM.png" width="900"/></div>

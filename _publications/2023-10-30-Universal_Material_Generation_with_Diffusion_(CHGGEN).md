@@ -9,6 +9,6 @@ This paper is about crystal generation with a score-based diffusion model.
 
 - Adapted a Variational Autoencoder (VAE)-based model and pre-trained CHGNet for 
 more efficient crystal structure representation.
-Implemented a score-based diffusion model for stable material generation.
+- Implemented a score-based diffusion model for stable material generation.
 - Conducted property-guided material generation to create materials with specific desired 
 properties.

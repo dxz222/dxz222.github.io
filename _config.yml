@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xinzhe Dai / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Xinzhe Dai"
-description              : &description "A fifth-year undergraduate student from University of Chinese Academy of Science"
+description              : &description "A fifth-year undergraduate student from the University of Chinese Academy of Sciences"
 url                      : https://dxz222.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dxz222/dxz222.github.io"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Xinzhe Dai"
   avatar           : "../images/personal_website_picture.png"
-  bio              : "A fifth-year undergraduate student dedicated to ML-driven material science"
+  bio              : "A fifth-year undergraduate student dedicated to ML-driven materials science"
   location         : "Beijing, China"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

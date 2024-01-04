@@ -4,9 +4,7 @@ collection: publications
 permalink: /publication/2023-10-28-DeepSTEM_Copilot_for_STEM_Z-contrast_Imaging_and_STEM-EELS_Data_Processing_and_Analysis
 excerpt: 'An open-source AI copilot for STEM Z-Contrast imaging and STEM-EELS data processing and analysis.'
 date: 2023-10-28
-venue: 'Poster, 2023 National Annual Conference on Electron Microscopy (expected)'
 paperurl: 'https://github.com/dxz222/DeepSTEM'
-citation: 'TBD'
 ---
 DeepSTEM is an open-source AI copilot for STEM Z-Contrast imaging and STEM-EELS data processing and analysis.
 

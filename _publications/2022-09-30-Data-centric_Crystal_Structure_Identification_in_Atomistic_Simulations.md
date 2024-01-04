@@ -4,9 +4,6 @@ collection: publications
 permalink: /publication/2022-09-30-Data-centric_Crystal_Structure_Identification_in_Atomistic_Simulations
 excerpt: 'Post-processing of atomistic simulation data with GCNN and feature engineering.'
 date: 2022-09-30
-venue: ''
-paperurl: 'TBD'
-citation: 'TBD'
 ---
 Post-processing of atomistic simulation data with graph convolutional neural network (GCNN) and embedding feature engineering strategy.
 -	Used graph convolution neural network as a classifier to identify local crystal structure in simulations, reducing the error rate by 2-5 times for different structures.

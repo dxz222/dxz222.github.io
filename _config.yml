@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Xinzhe Dai"
   avatar           : "../images/personal_website_picture.png"
-  bio              : "A fifth-year undergraduate student dedicated to ML-driven materials science"
+  bio              : "A fifth-year undergraduate student dedicated to solve scientific problem with machine learning"
   location         : "Beijing, China"
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"

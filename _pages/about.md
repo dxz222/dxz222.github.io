@@ -10,7 +10,7 @@ redirect_from:
 
 I'm a first-year PhD at [Department of Materials and Engineering](https://www.mse.cornell.edu/mse), Cornell University ([CU](https://www.cornell.edu/)). I worked on scanning transmission electron microscopy (STEM) with [Prof. Wu Zhou](http://zhouwu.ucas.ac.cn/index/group/detail?id=8.html) from [STEM Group](http://zhouwu.ucas.ac.cn/) at the University of Chinese Academy of Sciences ((UCAS)[https://english.ucas.ac.cn/]). To pursue my goal, I also worked as a visiting student in [Prof. Gerbrand Ceder's group](https://ceder.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/). Aligned with my goal of integrating scientific research with machine learning (ML), my interests lie in the fields (including but not limited to): 
 
-(1) **ML-driven computational material science:** accelerate material discovery with machine learning tools, including ML interatomic potential and material discovery with generative model.\\
+(1) **ML-driven computational materials science:** accelerate material discovery with machine learning tools, including ML interatomic potential and material discovery with generative model.\\
 (2) **ML-driven data analysis in electron microscopy:** develop machine learning techniques to improve spectral and imaging quality, track material defects, and enhance chemical characterization ability.\\
 (3) **Data-centric scientific discovery from electron microscopy:** explore structural characteristics and relationship between structure and properties within complex materials, like amorphous, via data-centric methods.
 

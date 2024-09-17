@@ -5,8 +5,8 @@ permalink: /publication/2024-06-16-Inpainting_crystal_structure_generations_with
 excerpt: 'This paper provides a way for intercalation-based materials design using generative inpainting method.'
 date: 2024-06-16
 venue: 'ICML 2024 Workshop AI4Science'
-paperurl: 'https://openreview.net/pdf?id=T1mIt5exUF                                                                '
-citation: 'Inpainting crystal structure generations with score-based denoising. ICML Workshop AI4Science (2024) Dai, X., Zhong, P., Deng, B., Chen, Y., Ceder, G.'
+paperurl: 'https://openreview.net/pdf?id=T1mIt5exUF'
+citation: 'Inpainting crystal structure generations with score-based denoising. ICML Workshop AI4Science (2024) Dai, X., Zhong, P., Deng, B., Chen, Y., Ceder, G.                                  '
 ---
 This study applies an SE(3)-equivariant diffusion model, pre-trained on the Materials Project database, to efficiently predict intercalant positions in host structures for energy storage materials design using the inpainting method.
 

@@ -15,8 +15,8 @@ Searching for the optimal atomic position of additive atoms in a given host stru
 
 - Developed a cutting-edge SE(3)-equivariant diffusion model for crystal structure generation.
 - Achieved high accuracy in predicting intercalant positions, with over 80% reconstruction rate for Li, Na, and Mg intercalants.
-- Demonstrated applications for battery materials, specifically MnO2 polymorphs.
-- Validated results with CHGNet and DFT, confirming minimal interatomic forces and energy deviations.
+- Demonstrated applications for battery materials, specifically MnO$_2$ polymorphs.
+- Validated results with CHGNet and DFT, confirming minimal interatomic forces and energy deviations for inpainted structures.
 
 [Download paper here](https://openreview.net/pdf?id=T1mIt5exUF)
 <div align=center><img src="../images/inpainting_crystal_structure.png" width="max-width:100%"/></div>

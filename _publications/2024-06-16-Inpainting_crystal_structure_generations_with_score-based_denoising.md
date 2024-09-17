@@ -21,4 +21,4 @@ differential equation using the predictor-corrector method, the model is capable
 - Validated results with CHGNet and DFT, confirming minimal interatomic forces and energy deviations.
 
 [Download paper here](https://openreview.net/pdf?id=T1mIt5exUF)
-<div align=center><img src="../images/low_dose_denoising.png" width="300"/></div>
+<div align=center><img src="../images/inpainting_crystal_structure" width="300"/></div>

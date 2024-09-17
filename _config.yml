@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Xinzhe Dai / Personal Homepage"
 title_separator          : "-"
 name                     : &name "Xinzhe Dai"
-description              : &description "A fifth-year undergraduate student from the University of Chinese Academy of Sciences"
+description              : &description "A first-year PhD student from Cornell University"
 url                      : https://dxz222.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "dxz222/dxz222.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Xinzhe Dai"
   avatar           : "../images/personal_website_picture.png"
-  bio              : "A fifth-year undergraduate student dedicated to solving scientific problems with machine learning"
-  location         : "Beijing, China"
+  bio              : "A first-year PhD student dedicated to solving scientific problems with machine learning"
+  location         : "Ithaca, NY, U.S."
   employer         :
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   # googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            : daixinzhe19@mails.ucas.ac.cn
+  email            : xd249@cornell.edu
   # researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :

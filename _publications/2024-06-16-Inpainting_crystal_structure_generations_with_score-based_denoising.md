@@ -19,4 +19,4 @@ Searching for the optimal atomic position of additive atoms in a given host stru
 - Validated results with CHGNet and DFT, confirming minimal interatomic forces and energy deviations.
 
 [Download paper here](https://openreview.net/pdf?id=T1mIt5exUF)
-<div align=center><img src="../images/inpainting_crystal_structure.png" width="300"/></div>
+<div align=center><img src="../images/inpainting_crystal_structure.png" width="max-width:100%"/></div>

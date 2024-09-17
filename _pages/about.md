@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a fifth-year undergraduate at [School of Physical Sciences](https://physics.ucas.ac.cn/index.php/en/), University of Chinese Academy of Sciences ([UCAS](https://english.ucas.ac.cn/)), fortunately working with [Prof. Wu Zhou](http://zhouwu.ucas.ac.cn/index/group/detail?id=8.html) from [STEM Group@UCAS](http://zhouwu.ucas.ac.cn/). To pursue my goal, I am now working as a visiting student in [Prof. Gerbrand Ceder's group](https://ceder.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/). Aligned with my goal of integrating scientific research with machine learning (ML), my interests lie in the fields (including but not limited to): 
+I'm a first-year PhD at [Department of Materials and Engineering](https://www.mse.cornell.edu/mse), Cornell University ([CU](https://www.cornell.edu/)). I worked on scanning transmission electron microscopy (STEM) with [Prof. Wu Zhou](http://zhouwu.ucas.ac.cn/index/group/detail?id=8.html) from [STEM Group](http://zhouwu.ucas.ac.cn/) at the University of Chinese Academy of Sciences ((UCAS)[https://english.ucas.ac.cn/]). To pursue my goal, I also worked as a visiting student in [Prof. Gerbrand Ceder's group](https://ceder.berkeley.edu/) at [UC Berkeley](https://www.berkeley.edu/). Aligned with my goal of integrating scientific research with machine learning (ML), my interests lie in the fields (including but not limited to): 
 
 (1) **ML-driven computational material science:** accelerate material discovery with machine learning tools, including ML interatomic potential and material discovery with generative model.\\
 (2) **ML-driven data analysis in electron microscopy:** develop machine learning techniques to improve spectral and imaging quality, track material defects, and enhance chemical characterization ability.\\
@@ -22,4 +22,4 @@ Plus, I initiated an [academic discussion community](../assets/Community_Wechat.
 
 You can find my CV here: [Xinzhe Dai's Curriculum Vitae](../assets/CV.pdf).
 
-[Email](mailto:daixinzhe19@mails.ucas.ac.cn) / [Github](https://github.com/dxz222)
+[Email](mailto:xd249@cornell.edu) / [Github](https://github.com/dxz222)

@@ -1,0 +1,57 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+import { url } from '../utils/paths';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<!doctype html>
+<html lang="en">
+  <head><BaseHead title={`Blog | ${SITE_TITLE}`} description="Research notes, methods, and project updates by Xinzhe Dai" /></head>
+  <body>
+    <Header />
+    <main>
+      <section class="page-hero">
+        <h1>Blog</h1>
+        <div>Ideas, methods, and working notes from research at the intersection of materials science and machine learning.</div>
+      </section>
+      <section class="posts">
+        {posts.length > 0 ? posts.map((post) => (
+          <article>
+            <time datetime={post.data.pubDate.toISOString()}>{post.data.pubDate.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</time>
+            <div>
+              <h2><a href={url(`/blog/${post.id}`)}>{post.data.title}</a></h2>
+              <p>{post.data.description}</p>
+            </div>
+          </article>
+        )) : (
+          <div class="empty">
+            <span>Notes coming soon.</span>
+          </div>
+        )}
+      </section>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .page-hero { padding: 0 0 5rem; }
+  h1 { margin-bottom: 1.5rem; }
+  .page-hero > div { max-width: 720px; color: var(--color-text-muted); font-size: 1.15rem; }
+  .posts { border-top: 1px solid var(--color-border); }
+  article { display: grid; grid-template-columns: 150px 1fr; gap: 2rem; padding: 2.5rem 0; border-bottom: 1px solid var(--color-border); }
+  time { color: var(--color-text-muted); font-size: 0.85rem; }
+  article h2 { border: 0; display: block; padding: 0; margin: 0 0 0.5rem; font-size: 1.6rem; }
+  article h2 a { color: var(--color-text-main); }
+  article p { margin: 0; }
+  .empty { padding: 5rem 0; }
+  .empty span { color: var(--color-text-main); font-size: 1.5rem; font-weight: 700; }
+  @media (max-width: 600px) { article { grid-template-columns: 1fr; gap: 0.5rem; } }
+</style>

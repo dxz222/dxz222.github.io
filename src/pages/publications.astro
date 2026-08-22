@@ -73,13 +73,18 @@ const formatAuthor = (auth: Author) => {
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Publications | ${SITE_TITLE}`} description="Academic Publications" />
+		<BaseHead title={`Publications | ${SITE_TITLE}`} description="Selected publications in AI for Science, materials discovery, and electron microscopy" />
 	</head>
 	<body>
 		<Header />
 		<main>
 			<h1>Publications</h1>
-			<p>Selected peer-reviewed publications.</p>
+			<p>
+                Selected publications and conference papers.
+                <a href="https://scholar.google.com/citations?user=hTVrXdIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
+                    View Google Scholar ↗
+                </a>
+            </p>
 			
 			<div class="publication-list">
 				{publications.map((entry) => (

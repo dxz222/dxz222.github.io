@@ -414,7 +414,7 @@ const fallbackHero = id ? url(`/blog/${id}.png`) : url('/og.png');
 			}
 			.title h1 {
 				margin: 0 0 0.5em 0;
-				font-size: 2.2rem;
+				font-size: var(--font-size-page-title);
 			}
 			.date {
 				margin-bottom: 0.5em;
@@ -436,9 +436,6 @@ const fallbackHero = id ? url(`/blog/${id}.png`) : url('/og.png');
 				font-size: 0.9rem;
 			}
 			@media (max-width: 768px) {
-				.title h1 {
-					font-size: 1.6rem;
-				}
 				.prose {
 					padding: 1rem 0.5rem;
 				}

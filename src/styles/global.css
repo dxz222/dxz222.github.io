@@ -4,6 +4,7 @@
 	/* Typography */
 	--font-sans: 'Atkinson', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	--font-serif: "Georgia", "Times New Roman", Times, serif;
+	--font-size-page-title: 2.5rem;
 
 	/* --- LIGHT THEME (Default) --- */
 	--color-bg: #ffffff;
@@ -20,7 +21,8 @@
 	--color-bg-mobile-menu: rgba(255, 255, 255, 0.95);
 
 	/* Spacing & UI */
-	--max-width: 960px;
+	--max-width: 1120px;
+	--page-padding-x: 6rem;
 	--radius: 8px;
 	--shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
 	--shadow-md: 0 4px 6px rgba(0, 0, 0, 0.08);
@@ -93,7 +95,15 @@ main {
 	width: 100%;
 	max-width: var(--max-width);
 	margin: 0 auto;
-	padding: 3rem 1rem;
+	padding: 3rem var(--page-padding-x);
+}
+
+@media (max-width: 900px) {
+	:root { --page-padding-x: 2rem; }
+}
+
+@media (max-width: 560px) {
+	:root { --page-padding-x: 1rem; }
 }
 
 h1,
@@ -108,7 +118,9 @@ h5 {
 }
 
 h1 {
-	font-size: 2.5rem;
+	font-size: var(--font-size-page-title);
+	letter-spacing: -0.03em;
+	line-height: 1.05;
 	margin-top: 0;
 }
 
@@ -313,17 +325,19 @@ a:hover {
 
 .pub-title {
 	font-weight: 700;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	color: var(--color-text-main);
 	display: block;
 }
 
 .pub-authors {
 	margin: 0.25rem 0;
+	font-size: 1.1rem;
 	color: var(--color-text-muted);
 }
 
 .pub-venue {
+	font-size: 1.1rem;
 	font-style: italic;
 	color: var(--color-text-muted);
 }

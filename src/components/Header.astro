@@ -1,353 +1,151 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { CV_URL, SITE_TITLE } from '../consts';
+import { SITE_TITLE } from '../consts';
 import { url } from '../utils/paths';
-
-const cvHref = CV_URL ? url(CV_URL) : null;
 ---
 
 <header>
-	<nav>
-		<h2><a href={url('/')}>{SITE_TITLE}</a></h2>
-        
-		<div class="internal-links">
-			<HeaderLink href={url('/')}>Home</HeaderLink>
-			<HeaderLink href={url('/publications')}>Publications</HeaderLink>
-			<HeaderLink href={url('/projects')}>Projects</HeaderLink>
-			<HeaderLink href={url('/team')}>Team</HeaderLink>
-			<div class="dropdown">
-				<button class="dropbtn">Blog</button>
-				<div class="dropdown-content">
-					<HeaderLink href={url('/blog')}>News</HeaderLink>
-					<HeaderLink href={url('/tags')}>Tags</HeaderLink>
-					<HeaderLink href={url('/archive')}>Archive</HeaderLink>
-				</div>
-			</div>
-			{cvHref && <HeaderLink href={cvHref} target="_blank">CV</HeaderLink>}
-		</div>
-
-        <div class="header-actions">
-            <a href="https://github.com/shravanngoswamii/astro-scholar" target="_blank" rel="noopener noreferrer" class="github-link" aria-label="GitHub Repository" title="GitHub Repository">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-            </a>
-            <button id="search-toggle-desktop" class="search-toggle" aria-label="Search site">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            </button>
-            <button id="theme-toggle" aria-label="Toggle Dark Mode">
-                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            </button>
-
-            <button id="menu-toggle" aria-label="Toggle Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
-            </button>
-        </div>
-	</nav>
-
-    <div id="mobile-menu" class="mobile-menu hidden">
-        <div class="mobile-menu-header">
-            <span class="mobile-menu-title">Menu</span>
-            <button id="search-toggle-mobile" class="search-toggle" aria-label="Search site">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-            </button>
-        </div>
-        <a href={url('/')}>Home</a>
-        <a href={url('/publications')}>Publications</a>
-        <a href={url('/projects')}>Projects</a>
-        <a href={url('/team')}>Team</a>
-        <span class="mobile-menu-section">Blog</span>
-        <div class="mobile-submenu">
-            <a href={url('/blog')}>News</a>
-            <a href={url('/tags')}>Tags</a>
-            <a href={url('/archive')}>Archive</a>
-        </div>
-        {cvHref && <a href={cvHref} target="_blank">CV</a>}
+  <nav aria-label="Primary navigation">
+    <a class="wordmark" href={url('/')}>{SITE_TITLE}</a>
+    <div class="primary-links">
+      <HeaderLink href={url('/publications')}>Publications</HeaderLink>
+      <HeaderLink href={url('/projects')}>Projects</HeaderLink>
+      <HeaderLink href={url('/blog')}>Blog</HeaderLink>
+      <HeaderLink href={url('/cv')}>CV</HeaderLink>
     </div>
+    <div class="header-actions">
+      <a class="icon-link" href="https://scholar.google.com/citations?user=hTVrXdIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 3 1 9l4 2.18v5.64L12 21l7-4.18v-5.64L21 10v6h2V9L12 3Zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9ZM17 15.68l-5 2.99-5-2.99v-3.41L12 15l5-2.73v3.41Z"/></svg>
+      </a>
+      <a class="icon-link" href="https://github.com/dxz222" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <button id="theme-toggle" class="icon-link" aria-label="Toggle color theme">
+        <span class="theme-symbol" aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </nav>
 </header>
 
 <script>
-    document.getElementById('theme-toggle')?.addEventListener('click', () => {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        const newTheme = isDark ? 'light' : 'dark';
-        (window as any).__setPreferredTheme?.(newTheme);
-        localStorage.setItem('theme', newTheme);
-    });
-
-    document.getElementById('menu-toggle')?.addEventListener('click', () => {
-        document.getElementById('mobile-menu')?.classList.toggle('hidden');
-    });
-
-    document.querySelectorAll('.search-toggle').forEach((btn) => {
-        btn.addEventListener('click', () => {
-            document.dispatchEvent(new CustomEvent('open-search'));
-        });
-    });
+  const button = document.getElementById('theme-toggle');
+  button?.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme');
+    const next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
 </script>
 
 <style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background-color: var(--color-bg-header);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-		position: sticky;
-		top: 0;
-		z-index: 100;
-        transition: background-color 0.3s ease;
-	}
-    
-    header::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 1px;
-        background: linear-gradient(90deg, transparent 0%, var(--color-border) 20%, var(--color-border) 80%, transparent 100%);
-        opacity: 0.6;
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--color-bg-header);
+    backdrop-filter: blur(14px);
+  }
+  header::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      var(--color-border) 20%,
+      var(--color-border) 80%,
+      transparent 100%
+    );
+    opacity: 0.6;
+  }
+  nav {
+    width: 100%;
+    max-width: var(--max-width);
+    height: 4.75rem;
+    margin: 0 auto;
+    padding: 0 var(--page-padding-x);
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+  .wordmark {
+    display: inline-block;
+    color: var(--color-text-main);
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 0.45rem 0 0.55rem;
+    border-bottom: 2px solid var(--color-accent);
+    justify-self: start;
+  }
+  .primary-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    font-size: 1.15rem;
+  }
+  .primary-links :global(a) {
+    padding: 0.55rem 0;
+    border-bottom: 2px solid transparent;
+    color: var(--color-text-main);
+    text-decoration: none;
+  }
+  .primary-links :global(a.active) {
+    border-bottom-color: var(--color-accent);
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+    gap: 1.15rem;
+  }
+  .icon-link {
+    width: 2.2rem;
+    height: 2.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--color-text-muted);
+    cursor: pointer;
+  }
+  .theme-symbol { font-size: 1.265rem; }
+  @media (max-width: 980px) {
+    .primary-links { gap: 1rem; font-size: 1rem; }
+    .header-actions { gap: 0.6rem; }
+  }
+  @media (max-width: 760px) {
+    nav {
+      height: auto;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+      grid-template-columns: 1fr auto;
+      gap: 0.5rem 1rem;
     }
-
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		max-width: var(--max-width);
-		margin: 0 auto;
-		height: 4.5rem;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.3em;
-		font-family: var(--font-sans);
-        font-weight: 700;
-        letter-spacing: -0.02em;
-	}
-	h2 a {
-		text-decoration: none;
-		color: var(--color-text-main);
-        border: none;
-	}
-
-	.internal-links {
-        display: flex;
-        align-items: center;
-        gap: 0.25rem;
+    .primary-links {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.4rem 1rem;
     }
-	.internal-links :global(a) {
-		padding: 0.5em 0.75em;
-		color: var(--color-text-main);
-		border-bottom: 2px solid transparent;
-		text-decoration: none;
-		font-size: 0.95rem;
-        font-weight: 500;
-        transition: all 0.2s ease;
-	}
-	.internal-links :global(a:hover) {
-        color: var(--color-accent);
-    }
-	.internal-links :global(a.active) {
-		text-decoration: none;
-		border-bottom-color: var(--color-accent);
-		color: var(--color-accent);
-	}
-
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    .dropbtn {
-        background-color: transparent;
-        color: var(--color-text-main);
-        padding: 0.5em 0.75em;
-        font-size: 0.95rem;
-        font-weight: 500;
-        line-height: inherit;
-        border: none;
-        cursor: pointer;
-        font-family: inherit;
-        transition: all 0.2s ease;
-        border-bottom: 2px solid transparent;
-    }
-    .dropdown:hover .dropbtn {
-        color: var(--color-accent);
-    }
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: var(--color-bg-mobile-menu);
-        backdrop-filter: blur(40px) saturate(150%);
-        -webkit-backdrop-filter: blur(40px) saturate(150%);
-        min-width: 120px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        border-radius: 8px;
-        overflow: hidden;
-        border: 1px solid var(--color-header-border);
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-    .dropdown-content :global(a) {
-        color: var(--color-text-main);
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        border-bottom: none;
-    }
-    .dropdown-content :global(a:hover) {
-        background-color: var(--color-bg-offset);
-    }
-    .dropdown:hover .dropdown-content,
-    .dropdown:focus-within .dropdown-content {
-        display: block;
-    }
-
-    .header-actions {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    
-    .search-toggle,
-    #theme-toggle {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--color-text-main);
-        transition: background-color 0.2s ease;
-    }
-    .search-toggle:hover,
-    #theme-toggle:hover {
-        background-color: var(--color-bg-offset);
-        color: var(--color-accent);
-    }
-
-    .github-link {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--color-text-main);
-        transition: background-color 0.2s ease;
-    }
-
-    .github-link:hover {
-        background-color: var(--color-bg-offset);
-        color: var(--color-accent);
-    }
-
-    .mobile-menu-header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 0.25rem;
-        border-bottom: 1px solid var(--color-border);
-        margin-bottom: 0.25rem;
-    }
-    .mobile-menu-title {
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: var(--color-text-muted);
-        padding-left: 0.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-    }
-
-    #menu-toggle {
-        display: none;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--color-text-main);
-    }
-
-    .mobile-menu {
-        position: absolute;
-        top: calc(100% + 0.5rem);
-        right: 1rem;
-        width: fit-content;
-        min-width: 180px;
-        background-color: var(--color-bg-mobile-menu);
-        backdrop-filter: blur(40px) saturate(150%);
-        -webkit-backdrop-filter: blur(40px) saturate(150%);
-        border: 1px solid var(--color-header-border);
-        border-radius: 12px;
-        padding: 0.5rem;
-        display: flex;
-        flex-direction: column;
-        gap: 0.125rem;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
-        z-index: 200;
-        animation: menuFadeIn 0.2s ease;
-    }
-    @keyframes menuFadeIn {
-        from { opacity: 0; transform: translateY(-8px) scale(0.96); }
-        to { opacity: 1; transform: translateY(0) scale(1); }
-    }
-    .mobile-menu a {
-        padding: 0.5rem 0.875rem;
-        text-decoration: none;
-        color: var(--color-text-main);
-        font-weight: 500;
-        font-size: 0.9rem;
-        border-radius: 8px;
-        transition: background-color 0.2s, color 0.2s;
-    }
-    .mobile-menu a:hover {
-        background-color: var(--color-bg-offset);
-        color: var(--color-accent);
-    }
-    .mobile-menu-section {
-        padding: 0.5rem 0.875rem;
-        font-weight: 600;
-        font-size: 0.9rem;
-        color: var(--color-text-muted);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-        margin-top: 0.5rem;
-        border-top: 1px solid var(--color-border);
-        padding-top: 0.75rem;
-    }
-    .mobile-submenu {
-        display: flex;
-        flex-direction: column;
-        padding-left: 1rem;
-        border-left: 2px solid var(--color-border);
-        margin-left: 1rem;
-        margin-bottom: 0.5rem;
-    }
-    .hidden { display: none; }
-    
-    .moon-icon { display: none; }
-    .sun-icon { display: block; }
-    :global(html[data-theme="dark"]) .moon-icon { display: block; }
-    :global(html[data-theme="dark"]) .sun-icon { display: none; }
-
-	@media (min-width: 721px) {
-        #menu-toggle { display: none; }
-        .mobile-menu { display: none !important; }
-	}
-
-	@media (max-width: 720px) {
-		.internal-links { display: none; }
-        #menu-toggle { display: flex; }
-        #search-toggle-desktop { display: none !important; }
-	}
+    .header-actions { grid-column: 2; grid-row: 1; }
+  }
+  @media (max-width: 520px) {
+    .wordmark { display: none; }
+    nav { grid-template-columns: 1fr; }
+    .header-actions { grid-column: 1; grid-row: 1; justify-self: center; }
+    .primary-links { grid-column: 1; grid-row: 2; width: 100%; }
+  }
 </style>

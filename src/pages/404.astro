@@ -85,7 +85,7 @@ import { url } from '../utils/paths';
       .title {
         margin-top: 0.8rem;
         margin-bottom: 0.75rem;
-        font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+        font-size: var(--font-size-page-title);
         border: 0;
         display: block;
         padding: 0;
@@ -194,9 +194,8 @@ import { url } from '../utils/paths';
             <ul>
               <li><a href={url('/publications')}>Publications</a></li>
               <li><a href={url('/projects')}>Projects</a></li>
-              <li><a href={url('/team')}>Team</a></li>
-              <li><a href={url('/blog')}>News</a></li>
-              <li><a href={url('https://shravangoswami.com/resume.pdf')}>CV</a></li>
+              <li><a href={url('/blog')}>Blog</a></li>
+              <li><a href={url('/cv')}>CV</a></li>
             </ul>
           </aside>
         </div>

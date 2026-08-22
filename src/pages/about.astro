@@ -1,31 +1,74 @@
 ---
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Layout from '../layouts/BlogPost.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_TITLE } from '../consts';
+import { url } from '../utils/paths';
 ---
 
-<Layout
-	title="About Friedrich Nietzsche"
-	description="Learn about the life and profound contributions of Friedrich Nietzsche, the visionary philosopher who revolutionized Western thought and challenged conventional morality."
-	pubDate={new Date('October 15 1844')}
-	heroImage={AboutHeroImage}
->
-	<p>
-		Friedrich Wilhelm Nietzsche (October 15, 1844 – August 25, 1900) was a German philosopher, cultural critic, composer, poet, and philologist. His philosophical works on morality, the will to power, and the concept of the Übermensch have exerted a profound influence on Western philosophy, literature, psychology, and politics. He is widely recognized as one of the most influential philosophers of all time, whose ideas have fundamentally shaped modern intellectual discourse and challenged fundamental assumptions about morality, truth, and human nature.
-	</p>
+<!doctype html>
+<html lang="en">
+  <head><BaseHead title={`About | ${SITE_TITLE}`} description="About Xinzhe Dai" /></head>
+  <body>
+    <Header />
+    <main class="about">
+      <header class="page-hero">
+        <p class="kicker">About</p>
+        <h1>Building machine learning that is useful to science.</h1>
+      </header>
+      <div class="about-grid">
+        <img src={url('/profile.png')} alt="Portrait of Xinzhe Dai" />
+        <div class="prose">
+          <p class="intro">
+            I am a PhD researcher in Materials Science and Engineering at Cornell University, working with
+            Prof. Jingjie Yeo. My research sits at the intersection of machine learning, computational
+            materials science, and electron microscopy.
+          </p>
+          <p>
+            I develop generative and data-centric methods for scientific discovery: crystal structure
+            prediction, machine-learning interatomic potentials, atomistic structure identification, and
+            analysis tools for STEM imaging and spectroscopy.
+          </p>
+          <p>
+            Before Cornell, I worked on scanning transmission electron microscopy with Prof. Wu Zhou at the
+            University of Chinese Academy of Sciences. I also conducted research on universal materials
+            discovery in Prof. Gerbrand Ceder's group at UC Berkeley and on crystal structure identification
+            with Prof. Rodrigo Freitas during an exchange at MIT.
+          </p>
+          <p>
+            Alongside research, I build open scientific tools. I lead the development of
+            <a href="https://github.com/dxz222/DeepSTEM">DeepSTEM</a>, an AI-assisted platform intended to make
+            advanced electron-microscopy analysis more accessible and reproducible.
+          </p>
+          <div class="links">
+            <a href="mailto:xd249@cornell.edu">Email</a>
+            <a href="https://github.com/dxz222">GitHub</a>
+            <a href={url('/files/CV_2026-08-17_xdai_v03.pdf')} target="_blank">CV</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>
 
-	<p>
-		Nietzsche was born in Röcken, a small village near Lützen in the Prussian Province of Saxony. His father, Carl Ludwig Nietzsche, was a Lutheran minister, and his mother, Franziska Oehler, came from a devout Protestant family. He received his education at several prestigious institutions, culminating in his studies at the University of Bonn and later at the University of Leipzig, where he studied classical philology. In 1869, at the remarkably young age of 24, Nietzsche was appointed professor of classical philology at the University of Basel in Switzerland, a position he obtained without even holding a doctorate, based on the strength of his scholarly work and recommendations.
-	</p>
-
-	<p>
-		Nietzsche's philosophical career was marked by profound intellectual independence and radical innovation. He published numerous groundbreaking works including "The Birth of Tragedy" (1872), "Thus Spoke Zarathustra" (1883-1885), "Beyond Good and Evil" (1886), and "On the Genealogy of Morals" (1887). His ideas about the reevaluation of all values, the critique of Judeo-Christian morality, and the vision of the Übermensch presented a fundamental challenge to Victorian sensibilities and conventional philosophical thought. His concept of "will to power" offered a revolutionary perspective on human motivation and the driving forces behind human behavior and culture.
-	</p>
-
-	<p>
-		Due to deteriorating health, Nietzsche resigned from his academic position in 1879 and spent the following years traveling throughout Europe, living a life of philosophical contemplation and creative productivity. Despite chronic illness that plagued him throughout his later years, he produced some of his most significant works during this period of withdrawal from academic life. He lived in various locations including Basel, Genoa, Nice, and Turin, finding inspiration in different environments while continuing his prolific philosophical and literary output.
-	</p>
-
-	<p>
-		In 1889, Nietzsche suffered a mental breakdown in Turin, Italy, from which he never fully recovered. He lived his remaining years under the care of his mother and sister in Weimar, Germany. He died in Weimar on August 25, 1900, at age 55. His intellectual legacy has profoundly influenced philosophy, psychology, literature, theology, and cultural criticism throughout the twentieth and twenty-first centuries. His ideas continue to inspire and provoke critical thinking about the nature of morality, human excellence, and the transformation of human civilization.
-	</p>
-</Layout>
+<style>
+  .page-hero {
+    position: static;
+    width: 100%;
+    max-width: 820px;
+    padding: 3rem 0 3.5rem;
+  }
+  .kicker { color: var(--color-accent); font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; }
+  h1 {
+    position: static;
+    max-width: 100%;
+  }
+  .about-grid { position: static; display: grid; grid-template-columns: 260px 1fr; gap: 5rem; align-items: start; }
+  .about-grid img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+  .prose { max-width: 700px; }
+  .prose p { font-size: 1.05rem; line-height: 1.8; }
+  .prose .intro { font-size: 1.28rem; color: var(--color-text-main); }
+  .links { display: flex; gap: 1.5rem; padding-top: 1rem; font-weight: 600; }
+  @media (max-width: 720px) { .about-grid { grid-template-columns: 1fr; gap: 2rem; } .about-grid img { width: 180px; } }
+</style>

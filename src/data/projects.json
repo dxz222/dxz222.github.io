@@ -27,7 +27,41 @@
     "status": "Open Source",
     "authors": ["xinzhe-dai"],
     "heroImage": "/images/projects/deepstem.png",
-    "link": "https://github.com/dxz222/DeepSTEM"
+    "route": "/projects#deepstem-series",
+    "showOnProjects": false
+  },
+  {
+    "id": "stem-chemical-mapping",
+    "title": "AI-Assisted Chemical Mapping in Atomic-Resolution STEM",
+    "description": "An end-to-end workflow for image restoration, atom localization, and intensity-based chemical assignment in complex two-dimensional materials.",
+    "year": 2024,
+    "status": "Research",
+    "series": "DeepSTEM",
+    "authors": ["xinzhe-dai"],
+    "heroImage": "/images/projects/deepstem/chemical-mapping-denoise-localization.jpg",
+    "route": "/projects/stem-chemical-mapping"
+  },
+  {
+    "id": "amorphous-carbon-structure-learning",
+    "title": "Learning Local Structure in Monolayer Amorphous Carbon",
+    "description": "Rotation-invariant representation learning for discovering interpretable local structural features in noisy atomic-resolution images.",
+    "year": 2024,
+    "status": "Research",
+    "series": "DeepSTEM",
+    "authors": ["xinzhe-dai"],
+    "heroImage": "/images/projects/deepstem/amorphous-latent-interpretation.jpg",
+    "route": "/projects/amorphous-carbon-structure-learning"
+  },
+  {
+    "id": "vibrational-stem-eels-denoising",
+    "title": "Machine-Learning Denoising for Vibrational STEM-EELS",
+    "description": "Machine-learning denoising for three-dimensional vibrational STEM-EELS spectrum-image data.",
+    "year": 2024,
+    "status": "Research",
+    "series": "DeepSTEM",
+    "authors": ["xinzhe-dai"],
+    "heroImage": "/images/projects/deepstem/dark-field-stem-eels-isotope-comparison.png",
+    "route": "/projects/vibrational-stem-eels-denoising"
   },
   {
     "id": "data-centric-atomistics",

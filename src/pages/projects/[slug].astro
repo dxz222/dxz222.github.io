@@ -1,0 +1,87 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+import { url } from '../../utils/paths';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  return projects.map((project) => ({
+    params: { slug: project.id },
+    props: { project },
+  }));
+}
+
+const { project } = Astro.props;
+const { Content } = await render(project);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={`${project.data.title} | ${SITE_TITLE}`}
+      description={project.data.description}
+    />
+  </head>
+  <body>
+    <Header />
+    <main class="project-page">
+      <a class="back-link" href={url('/projects#deepstem-series')}>← All projects</a>
+      <header class="project-hero">
+        {project.data.series && <p class="series-label">{project.data.series} research series</p>}
+        <h1>{project.data.title}</h1>
+        <p class="summary">{project.data.description}</p>
+        <p class="metadata">{project.data.year} · {project.data.status}</p>
+      </header>
+      <img class="hero-image" src={url(project.data.heroImage)} alt={project.data.title} />
+      <article class="project-body">
+        <Content />
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .project-page { max-width: var(--max-width); }
+  .back-link { display: inline-block; margin-bottom: 3rem; font-weight: 600; }
+  .project-hero { max-width: 900px; }
+  .series-label,
+  .metadata {
+    color: var(--color-accent);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .series-label { margin: 0 0 1.25rem; }
+  .project-hero h1 { max-width: 900px; margin-bottom: 1.5rem; }
+  .summary { max-width: 780px; color: var(--color-text-main); font-size: 1.3rem; line-height: 1.65; }
+  .metadata { margin: 2rem 0 0; }
+  .hero-image { width: 100%; height: auto; display: block; margin: 4rem 0; background: var(--color-bg-offset); }
+  .project-body { max-width: 860px; margin: 0 auto; }
+  :global(.project-body h2) {
+    display: block;
+    margin: 4rem 0 1.25rem;
+    border: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+  :global(.project-body h3) { margin-top: 2.5rem; color: var(--color-text-main); }
+  :global(.project-body p),
+  :global(.project-body li) { font-size: 1.16rem; line-height: 1.8; }
+  :global(.project-body ul) { padding-left: 1.4rem; color: var(--color-text-muted); }
+  :global(.project-body figure) { margin: 3rem 0; }
+  :global(.project-body figure img) { width: 100%; height: auto; display: block; }
+  :global(.project-body figcaption) { margin-top: 0.85rem; color: var(--color-text-muted); font-size: 0.98rem; line-height: 1.55; }
+  :global(.project-body .note) { border-left: 3px solid var(--color-accent); padding: 0.25rem 0 0.25rem 1.25rem; }
+  @media (max-width: 720px) {
+    .back-link { margin-bottom: 2rem; }
+    .hero-image { margin: 2.5rem 0; }
+    .summary { font-size: 1.16rem; }
+    :global(.project-body h2) { margin-top: 3rem; }
+  }
+</style>

@@ -92,7 +92,7 @@ const imageUrl = typeof image === 'string'
 	html[data-theme='dark'], html[data-theme='dark'] body { background-color: var(--color-bg); color-scheme: dark; }
 	html[data-theme='light'], html[data-theme='light'] body { background-color: var(--color-bg); color-scheme: light; }
 	/* Critical header layout — prevents FOUC before component CSS loads */
-	header {
+	body > header {
 		position: sticky;
 		top: 0;
 		z-index: 100;
@@ -100,7 +100,7 @@ const imageUrl = typeof image === 'string'
 		backdrop-filter: blur(12px);
 		-webkit-backdrop-filter: blur(12px);
 	}
-	header nav {
+	body > header nav {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -108,7 +108,7 @@ const imageUrl = typeof image === 'string'
 		margin: 0 auto;
 		height: 4.5rem;
 	}
-	header { background-color: var(--color-bg-header); }
+	body > header { background-color: var(--color-bg-header); }
 	/* Critical card backgrounds — prevents white flash in dark mode */
 	.project-card, .interactive-card, .pi-card, .collab-card, .team-card {
 		background-color: var(--color-bg-offset);

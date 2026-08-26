@@ -7,7 +7,14 @@ import projectsData from '../data/projects.json';
 import bibFileRaw from '../data/publications.bib?raw';
 import { url } from '../utils/paths';
 
-const selectedProjects = projectsData.slice(0, 3);
+const selectedProjects = projectsData.slice(0, 3).map((project) => {
+  const route = 'route' in project ? project.route : undefined;
+  return {
+    ...project,
+    href: route ? url(route) : project.link,
+    external: !route,
+  };
+});
 const publicationBlocks = bibFileRaw.split(/@\w+\s*\{/g).slice(1);
 const selectedPublications = publicationBlocks
   .map((block) => {
@@ -63,7 +70,12 @@ const selectedPublications = publicationBlocks
         </div>
         <div class="project-grid">
           {selectedProjects.map((project) => (
-            <a class="project-card" href={project.link} target="_blank" rel="noopener noreferrer">
+            <a
+              class="project-card"
+              href={project.href}
+              target={project.external ? '_blank' : undefined}
+              rel={project.external ? 'noopener noreferrer' : undefined}
+            >
               <img src={url(project.heroImage)} alt="" />
               <div class="card-copy">
                 <span>{project.year} · {project.status}</span>
